@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="textfieldLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giriş yap...:)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rI-M7-Jj2">
+                                <rect key="frame" x="16" y="333" width="361" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ab-KS-mJw">
+                                <rect key="frame" x="16" y="409" width="361" height="34"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJh-UQ-ZhR">
+                                <rect key="frame" x="16" y="451" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="PDz-s3-Up6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckS-F9-hp5">
+                                <rect key="frame" x="127" y="526" width="136" height="79"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" Yaa Hak..!">
+                                    <imageReference key="image" image="apple.logo" catalog="system" symbolScale="medium"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.80847331629999997" blue="0.19466567970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="1" green="0.80847331629999997" blue="0.19466567970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpO-ch-UgX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoşgeldin!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smA-rG-pkM">
+                                <rect key="frame" x="41" y="177" width="241" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="DBY-gL-ldJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92709004510309279" green="0.80844639328487533" blue="0.86063889884829359" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6ab-KS-mJw" firstAttribute="top" secondItem="8rI-M7-Jj2" secondAttribute="bottom" constant="46" id="5ex-uj-dUG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ckS-F9-hp5" secondAttribute="trailing" constant="130" id="8VI-f2-IZ9"/>
+                            <constraint firstItem="8rI-M7-Jj2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AMa-Hi-glG"/>
+                            <constraint firstItem="ckS-F9-hp5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="B8z-5d-myp"/>
+                            <constraint firstItem="8rI-M7-Jj2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BRT-Ec-pmL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smA-rG-pkM" secondAttribute="trailing" constant="111" id="Diq-7u-aWP"/>
+                            <constraint firstItem="6ab-KS-mJw" firstAttribute="leading" secondItem="PJh-UQ-ZhR" secondAttribute="leading" id="Iha-4a-Xzx"/>
+                            <constraint firstItem="6ab-KS-mJw" firstAttribute="trailing" secondItem="PJh-UQ-ZhR" secondAttribute="trailing" id="Jg4-I5-jED"/>
+                            <constraint firstItem="8rI-M7-Jj2" firstAttribute="trailing" secondItem="6ab-KS-mJw" secondAttribute="trailing" id="O3f-GF-o2V"/>
+                            <constraint firstItem="8rI-M7-Jj2" firstAttribute="leading" secondItem="6ab-KS-mJw" secondAttribute="leading" id="Pk3-cI-Rn7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ckS-F9-hp5" secondAttribute="bottom" constant="213" id="RPC-0e-EcA"/>
+                            <constraint firstItem="6ab-KS-mJw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cin-Gu-433"/>
+                            <constraint firstItem="ckS-F9-hp5" firstAttribute="top" secondItem="PJh-UQ-ZhR" secondAttribute="bottom" constant="41" id="i9r-Bw-cCA"/>
+                            <constraint firstItem="smA-rG-pkM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="iG0-i4-qcg"/>
+                            <constraint firstItem="PJh-UQ-ZhR" firstAttribute="top" secondItem="6ab-KS-mJw" secondAttribute="bottom" constant="8" id="rWd-kW-88U"/>
+                            <constraint firstItem="smA-rG-pkM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="utd-Qd-eRB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Password" destination="PJh-UQ-ZhR" id="gxo-tr-84c"/>
+                        <outlet property="labellog" destination="8rI-M7-Jj2" id="cPJ-NZ-SvK"/>
+                        <outlet property="userName" destination="6ab-KS-mJw" id="Wdx-O4-rAO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple.logo" catalog="system" width="105" height="128"/>
+    </resources>
+</document>
